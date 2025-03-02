@@ -10,7 +10,7 @@ const twitterClient = new TwitterApi('YOUR_X_API_KEY');
 
 app.get('/sentiment/:coin', (req, res) => {
   const coin = req.params.coin;
-  const tweets = [`${coin} is mooning!`, `Love ${coin}`, `${coin} sucks`];
+  const tweets = [`${coin} is hot!`, `Love ${coin} <3`, `${coin} should be avoided.`];
   let totalSentiment = 0;
 
   for (let i = 0; i < tweets.length; i++) {
